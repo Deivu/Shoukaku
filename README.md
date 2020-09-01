@@ -7,10 +7,10 @@
 ![NPM](https://img.shields.io/npm/l/shoukaku?style=flat-square)
 
 <p align="center">
-  <img src="https://github.com/Deivu/Shoukaku/blob/master/assets/cover.jpg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Japanese_aircraft_carrier_shokaku_1941.jpg">
 </p>
 
-The ShipGirl Project, feat Shoukaku (<=) & Zuikaku (=>) `(c) Kancolle for our cute girls`
+Japanese Navy Aircraft Carrier Shokaku type "Shokaku" immediately after completion photo `public domain`
 
 ### A Lavalink wrapper for Discord.js v12.x.x
 
@@ -30,7 +30,7 @@ The ShipGirl Project, feat Shoukaku (<=) & Zuikaku (=>) `(c) Kancolle for our cu
 
 ✅ Feature-rich.
 
-✅ Very cute and reliable Shipgirl ❤ (Very Very Important)
+✅ Very cute and reliable aircraft carrier ❤ (Very, very Important)
 
 ### Documentation
 https://deivu.github.io/Shoukaku/?api

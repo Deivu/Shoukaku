@@ -1,6 +1,6 @@
 env:
   commonjs: true
-  es6: true
+  es2020: true
   node: true
 extends: 'eslint:recommended'
 globals:
@@ -9,7 +9,7 @@ globals:
   load: readonly
   BigInt: readonly
 parserOptions:
-  ecmaVersion: 2018
+  ecmaVersion: 2020
 rules:
   indent:
     - error

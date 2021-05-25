@@ -17,7 +17,7 @@
         "sanitize":false
     },
     "app":{
-        "title":"Shoukaku | A Lavalink Library for Discord.JS v12",
+        "title":"Shoukaku",
         "routing":"query",
         "entrance":"content:readme",
         "base":"/Shoukaku"
@@ -33,7 +33,7 @@
                 "outline":"tree",
                 "collapsed":false,
                 "toolbar":true,
-                "itemsFolded":false,
+                "itemsFolded":true,
                 "itemsOverflow":"crop",
                 "badges":true,
                 "search":true,
@@ -44,11 +44,11 @@
                 "params":"list",
                 "enums":"list",
                 "props":"list",
-                "meta":false
+                "meta":true
             },
             "navbar":{
                 "enabled":true,
-                "dark":false,
+                "dark":true,
                 "animations":true,
                 "menu":[
                     {

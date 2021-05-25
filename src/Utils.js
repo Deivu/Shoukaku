@@ -1,7 +1,6 @@
-const ShoukakuError = require('../constants/ShoukakuError.js');
 const SearchTypes = { 'soundcloud': 'scsearch', 'youtube': 'ytsearch', 'youtubemusic': 'ytmsearch' };
 
-class ShoukakuUtil {
+class Utils {
     static getVersion() {
         try {
             const { version } = require('discord.js-light');
@@ -21,7 +20,7 @@ class ShoukakuUtil {
         const defaultKeys = Object.keys(def);
         for (const key of defaultKeys) {
             if (def[key] === null) {
-                if (!given[key]) throw new ShoukakuError(`${key} was not found from the given options.`);
+                if (!given[key]) throw new Error(`${key} was not found from the given options.`);
             }
             if (given[key] === null || given[key] === undefined) given[key] = def[key];
         }
@@ -34,16 +33,12 @@ class ShoukakuUtil {
 
     static searchType(string) {
         const result = SearchTypes[string];
-        if (!result) throw new ShoukakuError('This search type is not supported');
+        if (!result) throw new Error('This search type is not supported');
         return result;
     }
-
-    static websocketSend(ws, payload) {
-        return new Promise(resolve => ws.send(payload, () => resolve()));
-    }
-
+    
     static wait(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 }
-module.exports = ShoukakuUtil;
+module.exports = Utils;
